@@ -1,0 +1,17 @@
+/* footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+} */
+.Copyright {
+  background: #191e39;
+  letter-spacing: 0.1rem;
+  color: #d2d9fc;
+}
+
+.Copyright a {
+  color: #fff;
+}
+.Copyright a:hover {
+  color: #d2d9fc;
+}

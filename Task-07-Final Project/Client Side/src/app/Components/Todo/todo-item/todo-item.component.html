@@ -1,0 +1,30 @@
+<div class="card  mb-3 shadow bg-body rounded  " style="min-height: 18rem" [ngClass]="statusClassesHeaderBefor()">
+    <!------------------------------------title todo------------------------------------>
+
+    <div class="card-header fw-bold  " [ngClass]="statusClassesHeader()">
+        {{todo.title}}
+    </div>
+
+    <div class="card-body">
+        <ul class="list-unstyled" [innerHTML]="descriptionSplit()">
+
+
+
+
+        </ul>
+    </div>
+    <div class="card-footer bg-body " style="border:none">
+        <!------------------------------------status todo------------------------------------>
+        <Span><span class="fw-bold">Status:</span>{{todo.status}}</Span>
+        <!------------------------------------btn remove todo------------------------------------>
+
+        <i class=" float-end icon icon-remove" (click)="removeTodo()"></i>
+        <!------------------------------------btn edit todo------------------------------------>
+
+        <i class=" mr-3 float-end mx-2 icon icon-edit" routerLink="/todo-form/update/{{todo.id}}"></i>
+
+
+
+
+    </div>
+</div>

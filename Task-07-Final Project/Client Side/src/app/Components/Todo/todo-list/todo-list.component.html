@@ -1,0 +1,17 @@
+<app-navbar></app-navbar>
+
+<app-header></app-header>
+<!-- Todo List  -->
+<section>
+    <!-- Container wrapper -->
+
+    <div class="container">
+        <div class="row mt-3 justify-content-md-start justify-content-center">
+            <div class="col-lg-3 col-md-6 col-sm-6" *ngFor="let todo of todos">
+                <app-todo-item [todo]="todo"></app-todo-item>
+            </div>
+        </div>
+    </div>
+    <!-- Container wrapper -->
+</section>
+<!-- Todo List Form -->

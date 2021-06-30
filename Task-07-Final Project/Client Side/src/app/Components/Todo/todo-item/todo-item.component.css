@@ -1,0 +1,60 @@
+/**
+  * Card
+  */
+
+.card {
+  min-height: 250px;
+}
+/**
+  * Stauts of card
+  */
+.todo::before {
+  content: "";
+  background-color: #c73d46;
+  height: 5px;
+}
+.doing::before {
+  content: "";
+  background-color: #5d93e1;
+  height: 5px;
+}
+.done::before {
+  content: "";
+  background-color: #c7ffbf;
+  height: 5px;
+}
+
+.todoHeader {
+  background-color: #ffe6e7;
+  border: none;
+}
+.doingHeader {
+  background-color: #e1edff;
+  border: none;
+}
+.doneHeader {
+  background-color: #efffed;
+
+  border: none;
+}
+
+.icon::before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  cursor: pointer;
+}
+.icon-check {
+  content: "\f00c";
+  color: #5dc250;
+}
+.icon-edit:before {
+  content: "\f044";
+
+  color: #5dc250;
+}
+
+.icon-remove:before {
+  content: "\f2ed";
+  color: #c73d46;
+}

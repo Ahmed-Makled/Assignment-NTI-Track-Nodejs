@@ -1,0 +1,8 @@
+header {
+  background: url("../../../../assets/bg-header.jpg");
+
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

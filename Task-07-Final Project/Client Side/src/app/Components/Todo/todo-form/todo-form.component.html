@@ -1,0 +1,79 @@
+<app-navbar></app-navbar>
+<!-- Todo List Form -->
+
+<section>
+    <!-- Container wrapper -->
+
+    <div class="container p-sm-0 p-5">
+        <!-- Row wrapper -->
+
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8 col-12 shadow p-3 bg-white rounded border">
+                <!------------------------------------Title ------------------------------------>
+
+                <div class="mb-3">
+                    <label for="title" class="form-label"> Title </label>
+                    <input [(ngModel)]="todo.title" type="text" class="form-control" id="title"
+                        placeholder="Todo Title" />
+                </div>
+                <!------------------------------------Description------------------------------------>
+
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea [(ngModel)]="todo.description" class="form-control" id="description" rows="3"
+                        placeholder="Description"></textarea>
+                </div>
+                <!------------------------------------Status------------------------------------>
+
+                <div class="mb-3">
+                    <label for="status" class="form-label"> Status </label>
+
+                    <!-- Todo -->
+
+                    <div class="form-check">
+                        <input [(ngModel)]="todo.status" class="form-check-input" type="radio" name="Status" id="Todo"
+                            value="Todo" />
+                        <label class="form-check-label" for="Todo"> Todo </label>
+                    </div>
+                    <!-- Doing -->
+
+                    <div class="form-check">
+                        <input [(ngModel)]="todo.status" class="form-check-input" type="radio" name="Status" id="Doing"
+                            value="Doing" />
+                        <label class="form-check-label" for="Doing"> Doing </label>
+                    </div>
+                    <!-- Done -->
+
+                    <div class="form-check">
+                        <input [(ngModel)]="todo.status" class="form-check-input" type="radio" name="Status" id="Done"
+                            value="Done" />
+                        <label class="form-check-label" for="Done"> Done </label>
+                    </div>
+                </div>
+                <!------------------------------------Due Date------------------------------------>
+
+                <div class="mb-3">
+                    <label for="dueDate" class="form-label"> Due Date </label>
+                    <input [(ngModel)]="todo.dueDate" type="date" class="form-control" id="dueDate" />
+                </div>
+                <!------------------------------------Buttons------------------------------------>
+
+                <div class="mb-3 pt-3">
+                    <!-- Add or Update -->
+
+                    <button class="btn btn-primary" (click)="addTodo()">
+                        {{ editMod ? "Update" : "Add" }}
+                    </button>
+                    <!-- Cancel -->
+
+                    <button class="btn btn-secondary ms-3" routerLink="/todo">
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Row wrapper -->
+    </div>
+    <!-- Container wrapper -->
+</section>
+<!-- Todo List Form -->
