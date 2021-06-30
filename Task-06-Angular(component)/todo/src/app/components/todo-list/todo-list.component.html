@@ -1,0 +1,30 @@
+<section class="bg-dark pb-5">
+    <div class="container">
+        <div class="row justify-content-center ">
+
+
+            <div class="col-lg-6 col-12  text-center ">
+                <h1 class="fw-bold pt-3 pb-3 text-light ">Todo-List-Angular</h1>
+
+                <div class="input-group ">
+                    <input type="text" class="form-control p-4" placeholder="Type Your Todo List Here"
+                        aria-describedby="btn-add">
+
+
+                    <button class="btn  btn-primary text-capitalize" type="button" id="btn-add">+</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container mt-3">
+        <div class="row mt-3 justify-content-center ">
+            <div class="col-lg-6 col-12 bg-light shadow-sm p-3 m-2  rounded ">
+                <app-todo-item *ngFor='let todoData of todo' [todo]='todoData' (removeTodoEvent)='removeTodo($event)'>
+                </app-todo-item>
+            </div>
+        </div>
+    </div>
+</section>
