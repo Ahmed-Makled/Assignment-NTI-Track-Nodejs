@@ -1,0 +1,51 @@
+/**
+* Header
+**/
+header {
+  background: url("../images/bg.jpg");
+
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/**
+* Task content
+*/
+
+.task-content {
+  min-height: 450px;
+}
+
+/**
+* Button
+**/
+.remove {
+  float: right;
+  padding: 4px 10px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  border: 4px;
+  cursor: pointer;
+  background: #dc3545;
+}
+.remove:hover {
+  background: #e64252;
+}
+/**
+* Text Valid
+**/
+.valid {
+  margin-top: 0.25rem;
+  font-size: 0.875em;
+  color: #fffb00;
+  font-size: 1rem;
+  font-weight: 600;
+}
+/**
+* fix Float
+*/
+.clear {
+  clear: both;
+}
