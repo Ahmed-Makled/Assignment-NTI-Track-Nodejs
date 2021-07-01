@@ -1,0 +1,29 @@
+<div>
+    <span class="ms-4 fw-bold title title ">
+        Type :
+        <span class="ms-1  content">{{transaction.type}}</span>
+    </span>
+    <span class="ms-4 fw-bold title ">
+        From :
+        <span class="ms-1 content  ">{{transaction.from.name}}</span>
+    </span>
+    <span class="ms-4 fw-bold title ">
+        To :
+        <span class="ms-1 content  ">{{transaction.to.name}}</span>
+    </span>
+    <span class="ms-4 fw-bold title ">
+        Amount :
+        <span class="ms-1 content  ">{{transaction.amount}}</span>
+    </span>
+    <span class="ms-4 fw-bold title ">
+        Date :
+        <span class="ms-1 content ">{{transaction.createdAt}}</span>
+    </span>
+    <span class="ms-4 fw-bold title ">
+        Note :
+        <span class="ms-1 content  ">{{transaction.note}}</span>
+    </span>
+    <span class="float-end">
+        <a class="btn btn-danger " (click)="cancel()">Cancel</a>
+    </span>
+</div>

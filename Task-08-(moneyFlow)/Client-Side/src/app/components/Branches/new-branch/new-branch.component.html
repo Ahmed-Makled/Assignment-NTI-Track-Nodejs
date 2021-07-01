@@ -1,0 +1,43 @@
+<div *ngFor="let alert of errors" class="alert alert-danger alert-dismissible fade show" role="alert">
+    {{alert}}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<section class="mt-5">
+    <!-- Container wrapper -->
+
+    <div class="container p-sm-0 p-5">
+        <!-- Row wrapper -->
+
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8 col-12 shadow p-3 bg-white rounded border">
+                <div>
+                    <div class="mb-3">
+                        <label for="title" class="form-label"> Name </label>
+
+                        <input [(ngModel)]="name" type="text" class="form-control" id="title" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="title" class="form-label"> Balance </label>
+                        <input [(ngModel)]="balance" type="number" class="form-control" id="title"
+                            placeholder="Balance" />
+                    </div>
+
+                    <div class="mb-3 pt-3">
+                        <button class="btn btn-primary" (click)="createNewBranch()">
+                            Add
+                        </button>
+                        <!-- Cancel -->
+
+                        <button class="btn btn-secondary ms-3" routerLink="/home">
+                            Cancel
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- Row wrapper -->
+    </div>
+    <!-- Container wrapper -->
+</section>

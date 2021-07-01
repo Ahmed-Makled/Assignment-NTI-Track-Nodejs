@@ -1,0 +1,14 @@
+.title {
+  color: #000;
+  min-height: 2rem;
+
+  padding: 1rem;
+  font-weight: bold;
+  background: #eee;
+}
+.content {
+  color: #636464;
+}
+.title:hover {
+  background-color: rgb(199, 199, 199);
+}

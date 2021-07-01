@@ -58,3 +58,7 @@
   content: "\f2ed";
   color: #c73d46;
 }
+
+.checked {
+  font-size: 50px;
+}

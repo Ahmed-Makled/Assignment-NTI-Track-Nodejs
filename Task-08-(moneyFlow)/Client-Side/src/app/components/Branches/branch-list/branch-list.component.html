@@ -1,0 +1,18 @@
+<section class="border border priamry mt-5 ">
+    <div class="container">
+        <div class="row pt-3">
+            <div class="col text-center  ">
+                <h3 class="fw-bold fs-1 text-decoration-underline">Branches</h3>
+            </div>
+
+
+        </div>
+        <div class="row p-5">
+            <div class="col" *ngFor="let branch of branches">
+
+                <app-branches-details [branch]="branch"></app-branches-details>
+
+            </div>
+        </div>
+    </div>
+</section>
